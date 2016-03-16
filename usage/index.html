@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Usage - Drumkit</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../_css/menu.css" rel="stylesheet">
+  <link href="../_css/term.css" rel="stylesheet">
+  <link href="../_css/style.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Usage";
+    var mkdocs_page_input_path = "usage.md";
+    var mkdocs_page_url = "/usage/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Drumkit</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../install/">Install</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Usage</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#usage">Usage</a></li>
+                
+                    <li><a class="toctree-l4" href="#gnu-make">GNU Make</a></li>
+                
+                    <li><a class="toctree-l4" href="#help">Help</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../documentation/">Documentation</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Drumkit</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Usage</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/ergonlogic/drumkit" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="usage">Usage <a href="https://travis-ci.org/ergonlogic/drumkit"><img alt="Build status" src="https://travis-ci.org/ergonlogic/drumkit.svg" /></a></h1>
+<h2 id="gnu-make">GNU Make</h2>
+<p>Most Drupal platform creation refers to Drush makefiles. Drumkit includes a set
+of <a href="https://www.gnu.org/software/make/">GNU Make</a>files. Familiarity with Make
+will allow you to extend and override Drumkit's functionality. However, for
+normal usage all you need to know is that all commands are prefaced by <code>make</code>,
+which invokes GNU Make.</p>
+<h2 id="help">Help</h2>
+<p>To see what commands are available, run:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">$</span> make <span style="color: #AA22FF">help</span>
+<span style="color: #888888">make help</span>
+<span style="color: #888888">  Print this help message.</span>
+<span style="color: #888888">make tools-help</span>
+<span style="color: #888888">  Print install help for all tools.</span>
+<span style="color: #888888">make drupal</span>
+<span style="color: #888888">  Build a Drupal codebase, install a site and start a web server.</span>
+<span style="color: #888888">make kill-server</span>
+<span style="color: #888888">  Stop the server running started during site install.</span>
+<span style="color: #888888">make install</span>
+<span style="color: #888888">  Install all tools.</span>
+<span style="color: #888888">make test</span>
+<span style="color: #888888">  Run tests.</span>
+<span style="color: #888888">make vagrant</span>
+<span style="color: #888888">  Add a Vagrantfile.</span>
+<span style="color: #888888">make up</span>
+<span style="color: #888888">  Launch Vagrant.</span>
+<span style="color: #888888">make rebuild</span>
+<span style="color: #888888">  Destroy the current Vagrant VM and re-provision a new one.</span>
+</pre></div>
+
+
+<p>To see the tools that <code>drumkit</code> can install, and options related to them, run:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">$</span> make tools-help
+<span style="color: #888888">make composer</span>
+<span style="color: #888888">  Install Composer.</span>
+<span style="color: #888888">make composer COMPOSER_REL=1.0.0-beta1</span>
+<span style="color: #888888">  Install the 1.0.0-beta1 release of Composer.</span>
+<span style="color: #888888">make drush</span>
+<span style="color: #888888">  Install Drush.</span>
+<span style="color: #888888">make drush DRUSH_REL=8.0.5</span>
+<span style="color: #888888">  Install the 8.0.5 release of Drush.</span>
+<span style="color: #888888">make behat</span>
+<span style="color: #888888">  Install Behat.</span>
+<span style="color: #888888">make selenium</span>
+<span style="color: #888888">  Install Selenium.</span>
+</pre></div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../documentation/" class="btn btn-neutral float-right" title="Documentation">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../install/" class="btn btn-neutral" title="Install"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/ergonlogic/drumkit" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../install/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../documentation/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
