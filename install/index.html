@@ -3,10 +3,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
   
   <title>Install - Drumkit</title>
   
@@ -27,8 +24,6 @@
   <script>
     // Current page data
     var mkdocs_page_name = "Install";
-    var mkdocs_page_input_path = "install.md";
-    var mkdocs_page_url = "/install/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -134,39 +129,35 @@
               
                 <h1 id="installation">Installation <a href="https://travis-ci.org/ergonlogic/drumkit"><img alt="Build status" src="https://travis-ci.org/ergonlogic/drumkit.svg" /></a></h1>
 <h2 id="one-liner">One-liner</h2>
-<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #888888">wget https://raw.githubusercontent.com/ergonlogic/drumkit/master/scripts/install.sh | /bin/bash</span>
-</pre></div>
+<pre class="codehilite"><code class="language-console">wget -O - https://raw.githubusercontent.com/ergonlogic/drumkit/master/scripts/install.sh | /bin/bash</code></pre>
 
 
 <h2 id="install-tools">Install Tools</h2>
 <p>To see the tools that <code>drumkit</code> can install, and options related to them, run:</p>
-<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">$</span> make tools-help
-<span style="color: #888888">make composer</span>
-<span style="color: #888888">  Install Composer.</span>
-<span style="color: #888888">make composer COMPOSER_REL=1.0.0-beta1</span>
-<span style="color: #888888">  Install the 1.0.0-beta1 release of Composer.</span>
-<span style="color: #888888">make drush</span>
-<span style="color: #888888">  Install Drush.</span>
-<span style="color: #888888">make drush DRUSH_REL=8.0.5</span>
-<span style="color: #888888">  Install the 8.0.5 release of Drush.</span>
-<span style="color: #888888">make behat</span>
-<span style="color: #888888">  Install Behat.</span>
-<span style="color: #888888">make selenium</span>
-<span style="color: #888888">  Install Selenium.</span>
-</pre></div>
+<pre class="codehilite"><code class="language-console">$ make tools-help
+make composer
+  Install Composer.
+make composer COMPOSER_REL=1.0.0-beta1
+  Install the 1.0.0-beta1 release of Composer.
+make drush
+  Install Drush.
+make drush DRUSH_REL=8.0.5
+  Install the 8.0.5 release of Drush.
+make behat
+  Install Behat.
+make selenium
+  Install Selenium.</code></pre>
 
 
 <p>All of them can be installed at once by running:</p>
-<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">$</span> make install
-</pre></div>
+<pre class="codehilite"><code class="language-console">$ make install</code></pre>
 
 
 <p>The tools are installed locally in <code>.mk/.local/</code>. The idea here is to isolate
 them from your local system setup. this should make it easier when working as a
 team, since you'll all be using the same suite of local tools.</p>
 <p>To use these locally installed tools, run:</p>
-<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">$</span> .mk/scripts/hacking.sh
-</pre></div>
+<pre class="codehilite"><code class="language-console">$ .mk/scripts/hacking.sh</code></pre>
 
 
 <p>This will (temporarily) add the local tools directory to your PATH, taking
@@ -178,7 +169,7 @@ priority over you your normal system installed tools.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../usage/" class="btn btn-neutral float-right" title="Usage">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../usage/" class="btn btn-neutral float-right" title="Usage"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -206,7 +197,7 @@ priority over you your normal system installed tools.</p>
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/ergonlogic/drumkit" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
         <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>

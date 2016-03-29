@@ -3,10 +3,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
   
   <title>Usage - Drumkit</title>
   
@@ -27,8 +24,6 @@
   <script>
     // Current page data
     var mkdocs_page_name = "Usage";
-    var mkdocs_page_input_path = "usage.md";
-    var mkdocs_page_url = "/usage/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -141,43 +136,41 @@ normal usage all you need to know is that all commands are prefaced by <code>mak
 which invokes GNU Make.</p>
 <h2 id="help">Help</h2>
 <p>To see what commands are available, run:</p>
-<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">$</span> make <span style="color: #AA22FF">help</span>
-<span style="color: #888888">make help</span>
-<span style="color: #888888">  Print this help message.</span>
-<span style="color: #888888">make tools-help</span>
-<span style="color: #888888">  Print install help for all tools.</span>
-<span style="color: #888888">make drupal</span>
-<span style="color: #888888">  Build a Drupal codebase, install a site and start a web server.</span>
-<span style="color: #888888">make kill-server</span>
-<span style="color: #888888">  Stop the server running started during site install.</span>
-<span style="color: #888888">make install</span>
-<span style="color: #888888">  Install all tools.</span>
-<span style="color: #888888">make test</span>
-<span style="color: #888888">  Run tests.</span>
-<span style="color: #888888">make vagrant</span>
-<span style="color: #888888">  Add a Vagrantfile.</span>
-<span style="color: #888888">make up</span>
-<span style="color: #888888">  Launch Vagrant.</span>
-<span style="color: #888888">make rebuild</span>
-<span style="color: #888888">  Destroy the current Vagrant VM and re-provision a new one.</span>
-</pre></div>
+<pre class="codehilite"><code class="language-console">$ make help
+make help
+  Print this help message.
+make tools-help
+  Print install help for all tools.
+make drupal
+  Build a Drupal codebase, install a site and start a web server.
+make kill-server
+  Stop the server running started during site install.
+make install
+  Install all tools.
+make test
+  Run tests.
+make vagrant
+  Add a Vagrantfile.
+make up
+  Launch Vagrant.
+make rebuild
+  Destroy the current Vagrant VM and re-provision a new one.</code></pre>
 
 
 <p>To see the tools that <code>drumkit</code> can install, and options related to them, run:</p>
-<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">$</span> make tools-help
-<span style="color: #888888">make composer</span>
-<span style="color: #888888">  Install Composer.</span>
-<span style="color: #888888">make composer COMPOSER_REL=1.0.0-beta1</span>
-<span style="color: #888888">  Install the 1.0.0-beta1 release of Composer.</span>
-<span style="color: #888888">make drush</span>
-<span style="color: #888888">  Install Drush.</span>
-<span style="color: #888888">make drush DRUSH_REL=8.0.5</span>
-<span style="color: #888888">  Install the 8.0.5 release of Drush.</span>
-<span style="color: #888888">make behat</span>
-<span style="color: #888888">  Install Behat.</span>
-<span style="color: #888888">make selenium</span>
-<span style="color: #888888">  Install Selenium.</span>
-</pre></div>
+<pre class="codehilite"><code class="language-console">$ make tools-help
+make composer
+  Install Composer.
+make composer COMPOSER_REL=1.0.0-beta1
+  Install the 1.0.0-beta1 release of Composer.
+make drush
+  Install Drush.
+make drush DRUSH_REL=8.0.5
+  Install the 8.0.5 release of Drush.
+make behat
+  Install Behat.
+make selenium
+  Install Selenium.</code></pre>
               
             </div>
           </div>
@@ -185,7 +178,7 @@ which invokes GNU Make.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../documentation/" class="btn btn-neutral float-right" title="Documentation">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../documentation/" class="btn btn-neutral float-right" title="Documentation"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../install/" class="btn btn-neutral" title="Install"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -213,7 +206,7 @@ which invokes GNU Make.</p>
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/ergonlogic/drumkit" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
         <span><a href="../install/" style="color: #fcfcfc;">&laquo; Previous</a></span>
